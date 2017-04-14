@@ -6,13 +6,13 @@ var feed = $('#feed');
 
 // store feedparents here because of ordering, variable 'feed' first then can grab parent of feed
 // store parent element to reference it
-var feedsParent = feed.parent().get(0);
+var feedsParent = feed.parent();
 
 // remove whats inside the element (child elements)
 // feed.parentNode.removeChild(feed);
 // now using jQuery
-// feed.parent().remove(feed);
-feedsParent.remove();
+feed.parent().remove();
+// feedsParent.remove();
 
 // using prepend, add new image to the feed
-// feedsParent.prepend("http://static.wixstatic.com/media/2659a8_35292960ee6c4a9bb1aafe1059255296.jpg_256");
+var motivation = '<img src="https://static.planetminecraft.com/files/resource_media/screenshot/1233/nike_just_do_it_3286309_thumb.jpg">';
