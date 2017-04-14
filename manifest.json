@@ -1,5 +1,12 @@
 {
   "manifest_version": 2,
   "name": "Jim's YouTube Blocking Productivity Extension",
-  "version": "1.0"
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://youtube.com/*"],
+      "js": ["./main.js"]
+    }
+  ]
 }
