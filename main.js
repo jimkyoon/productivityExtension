@@ -1,4 +1,5 @@
 
+
 // grab the element in HTML document
 // var feed = document.getElementById('feed');
 // now using jQuery
@@ -11,8 +12,15 @@ var feedsParent = feed.parent();
 // remove whats inside the element (child elements)
 // feed.parentNode.removeChild(feed);
 // now using jQuery
-feed.parent().remove();
-// feedsParent.remove();
+// feed.parent().remove();
+feedsParent.remove();
 
 // using prepend, add new image to the feed
 var motivation = '<img src="https://static.planetminecraft.com/files/resource_media/screenshot/1233/nike_just_do_it_3286309_thumb.jpg">';
+feedsParent.prepend("<h1>GET BACK TO WORK!</h1>");
+feedsParent.prepend(motivation);
+
+console.log(feedsParent);
+
+var textElement = feedsParent.children()[0];
+textElement.addClass('beauText');
