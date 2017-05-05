@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Jim's YouTube and Facebook Blocking Productivity Extension",
+  "name": "Jim's Content Blocking Productivity Extension",
   "version": "1.0",
-  "description": "Extension to increase productivity",
+  "description": "Extension to increase productivity by blocking the main contents from YouTube and Facebook",
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
