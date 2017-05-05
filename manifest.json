@@ -1,12 +1,17 @@
 {
   "manifest_version": 2,
-  "name": "Jim's YouTube Blocking Productivity Extension",
+  "name": "Jim's YouTube and Facebook Blocking Productivity Extension",
   "version": "1.0",
   "description": "Extension to increase productivity",
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
-      "js": ["jquery.min.js", "./main.js"],
+      "js": ["jquery.min.js", "./blockYoutube.js"],
+      "css": ["index.css"]
+    },
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["jquery.min.js", "./blockFacebook.js"],
       "css": ["index.css"]
     }
   ]
